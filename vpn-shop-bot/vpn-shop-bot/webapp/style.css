@@ -1,0 +1,78 @@
+/* ===========================================================
+   رنگ‌ها اینجا تعریف شدن - هرکدوم رو خواستی راحت تغییر بده
+   =========================================================== */
+:root {
+  --color-green:  #2ea043;
+  --color-blue:   #3b6fd6;
+  --color-red:    #d9463f;
+  --dot-purple:   #a855f7;
+  --dot-orange:   #f59e0b;
+  --dot-blue:     #3fa9f5;
+  --dot-white:    #e8e8e8;
+
+  --bg: var(--tg-theme-bg-color, #0e0e14);
+  --text-light: #ffffff;
+  --radius: 16px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 14px;
+  background: var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  position: relative;
+  flex: 1;
+  border: none;
+  border-radius: var(--radius);
+  padding: 22px 16px;
+  color: var(--text-light);
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform .08s ease, filter .15s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,.25);
+}
+
+.btn:active {
+  transform: scale(0.97);
+  filter: brightness(0.92);
+}
+
+.btn-full { width: 100%; }
+
+.btn-green { background: var(--color-green); }
+.btn-blue  { background: var(--color-blue); }
+.btn-red   { background: var(--color-red); }
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-purple { background: var(--dot-purple); }
+.dot-orange { background: var(--dot-orange); }
+.dot-blue   { background: var(--dot-blue); }
+.dot-white  { background: var(--dot-white); }
